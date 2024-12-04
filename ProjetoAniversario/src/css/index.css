@@ -1,0 +1,30 @@
+body{
+    background-color: #FCD5CE;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.conteudo-imagem img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.botao {
+    background-color: #ff69b4; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+    margin: 80px auto;
+}
+
+.botao:hover {
+    background-color: #ff1493;
+}
+
