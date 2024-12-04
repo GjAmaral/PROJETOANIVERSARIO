@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #FCD5CE; /* Cor de fundo suave */
+}
+
+/* Estilo do header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #ff1493; /* Cor rosa vibrante para o título */
+}
+
+/* Estilo da galeria */
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Grid de cards */
+#grid-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo de cada card */
+.card {
+    background: #ff69b4; /* Cor de fundo rosa claro para os cards */
+    border: 1px solid #ff1493; /* Cor da borda para dar contraste */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Largura fixa para os cards */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Efeito de sombra mais forte ao passar o mouse */
+}
+
+/* Carrossel dentro dos cards */
+.carrossel {
+    width: 100%;
+    height: 200px; /* Altura fixa do carrossel */
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Corpo do card */
+.card-corpo {
+    padding: 15px;
+    background-color: #fff; /* Cor de fundo branca para o corpo do card */
+}
+
+.card-titulo {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ff1493; /* Cor do título em rosa vibrante */
+}
+
+.card-texto {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #666; /* Cor de texto mais suave */
+}
+
+.card-botao {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ff1493; /* Cor de fundo do botão em rosa vibrante */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.card-botao:hover {
+    background: #ff69b4; /* Cor de fundo do botão quando hover, em rosa mais claro */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Cards ocupam largura total em telas pequenas */
+    }
+}
